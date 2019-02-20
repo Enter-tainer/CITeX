@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\usepackage[european]{circuitikz}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\begin{document}
+\begin{circuitikz}
+  \draw (0,0)
+  to[battery1,l=$E$,a=$r$] (2, 0)
+  to[nos] (3, 0)
+  to node[draw,circle,fill=white,thick] {A} (5, 0)
+  to[short] (5, 0)
+  to[short, -*] (5, 2)
+  to[vR] (0, 2)
+  to[short, *-] (0, 0);
+  \draw (0, 2)
+  to[short] (0, 4)
+  to node[draw,circle,fill=white,thick] {V} (5, 4)
+  to[-|] (5, 2);
+  \draw[color=black, dashed, thick] (-0.5, -1) -- (5.5, -1) -- (5.5, 1.5) -- (-0.5, 1.5) -- (-0.5, -1);
+  \node at (4, -0.7) {$R_A$};
+  \node at (2.5, 3.3) {$R_V$};
+\end{circuitikz}
+\end{document}
