@@ -1,6 +1,6 @@
 # CITeX
 
-Let `CircleCI` build your LaTeX documents，and deploy them to a branch of the exactly same repository.
+Let `CircleCI` build your LaTeX documents, and deploy them to a branch of the exactly same repository.
 
 ## Usage
 
