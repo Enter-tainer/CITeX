@@ -15,7 +15,7 @@ jobs:
             echo "Host *" >> /etc/ssh/ssh_config
             echo "    StrictHostKeyChecking no" >> /etc/ssh/ssh_config
             echo "    UserKnownHostsFile=/dev/null" >> /etc/ssh/ssh_config
-            git clone git@github.com:Enter-tainer/LaTeXDocs.git --depth=1 # TODO: Change the link
+            git clone git@github.com:Enter-tainer/CITeX.git --depth=1 # TODO: Change the link
       - run:
           name: Install and configure dependencies
           command: |
