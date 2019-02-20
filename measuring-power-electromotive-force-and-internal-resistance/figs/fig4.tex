@@ -1,0 +1,19 @@
+\documentclass{standalone}
+\usepackage{xeCJK}
+\setCJKmainfont{思源宋体 CN}
+\usepackage[european]{circuitikz}
+\usepackage{tikz,pgf}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\begin{document}
+\begin{tikzpicture}[line cap=round,line join=round,x=1cm,y=1cm]
+\draw[->] (0, 0) -- (3, 0) node[right]{\footnotesize{$I$}};
+\draw[->] (0, 0) -- (0, 3) node[above]{\footnotesize{$U$}};
+\coordinate (E) at (0, 2.5);
+\coordinate (I) at (2.5, 0);
+\coordinate (I') at (2, 0);
+\draw[dashed] (E) node[left]{\footnotesize{$E'=E$}} -- (I) node[above right]{\footnotesize{$I$}};
+\draw (E) -- (I') node[below]{\footnotesize{$\displaystyle{I'=\frac E {r + R_A}}$}};
+\end{tikzpicture}
+\end{document}

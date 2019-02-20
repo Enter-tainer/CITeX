@@ -1,0 +1,19 @@
+\documentclass{standalone}
+\usepackage{xeCJK}
+\setCJKmainfont{思源宋体 CN}
+\usepackage[european]{circuitikz}
+\usepackage{tikz,pgf}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\begin{document}
+\begin{tikzpicture}[line cap=round,line join=round,x=1cm,y=1cm]
+\draw[->] (0, 0) -- (3, 0) node[right]{\footnotesize{$I$}};
+\draw[->] (0, 0) -- (0, 3) node[above]{\footnotesize{$U$}};
+\coordinate (E) at (0, 2.5);
+\coordinate (I) at (2.5, 0);
+\draw (E) node[left]{\footnotesize{$E$}} -- (I) node[below]{\footnotesize{$I$}};
+\draw (E) circle[radius=0.05] node[right]{\tiny{\ 开路电压}};
+\draw (I) circle[radius=0.05] node[above right]{\tiny{短路电流}};
+\end{tikzpicture}
+\end{document}
