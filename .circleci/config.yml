@@ -23,13 +23,13 @@ jobs:
       - run:
           name: Build LaTeX
           command: |
-            cd LaTeXDocs
+            cd CITeX # TODO: Change the repo name
             fish ./build.fish
             fish ./clean.fish
       - run:
           name: Push to GitHub
           command: |
-            cd LaTeXDocs
+            cd CITeX # TODO: Change the repo name
             fish ./deploy.fish
 workflows:
   version: 2
