@@ -12,4 +12,4 @@ Let `CircleCI` build your LaTeX documents, and deploy them to a branch of the ex
 
 ## Example
 
-see [measuring-power-electromotive-force-and-internal-resistance](measuring-power-electromotive-force-and-internal-resistance)`
+see [measuring-power-electromotive-force-and-internal-resistance](https://github.com/Enter-tainer/CITeX/blob/pdf/measuring-power-electromotive-force-and-internal-resistance/measuring-power-electromotive-force-and-internal-resistance.pdf)
